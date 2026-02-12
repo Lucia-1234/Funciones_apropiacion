@@ -24,15 +24,18 @@ const calcularFactura = (productos) => {
   let totalConIVA = totalSinIVA + iva;
 
   return {
-    detalle: productos.map(p => ({
-      nombre: p.nombre,
-      subtotal: calcularSubtotal(p.precio, p.cantidad)
-    })),
     totalSinIVA: totalSinIVA,
     iva: iva,
     totalConIVA: totalConIVA
   };
 };
+
+const resumirFactura = (factura) => {
+  Object.keys(factura).forEach(elemento => {
+    const valor = factura[elemento];
+    console.log(`${elemento}: ${valor}`);
+  });
+}
 
 // Ejemplo de uso:
 let listaProductos = [
@@ -43,7 +46,10 @@ let listaProductos = [
 
 let factura = calcularFactura(listaProductos);
 
-console.log("Detalle de productos:", factura.detalle);
-console.log("Total sin IVA:", factura.totalSinIVA);
-console.log("IVA (19%):", factura.iva);
-console.log("Total a pagar:", factura.totalConIVA);
+
+resumirFactura(factura)
+
+// console.log("Detalle de productos:", factura.detalle);
+// console.log("Total sin IVA:", factura.totalSinIVA);
+// console.log("IVA (19%):", factura.iva);
+// console.log("Total a pagar:", factura.totalConIVA);
