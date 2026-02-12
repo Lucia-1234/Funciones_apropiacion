@@ -1,0 +1,1 @@
+export { saludoPersonalizado } from './Actividad_apropiacion/ejercicio1/Ejercicio1.js';
