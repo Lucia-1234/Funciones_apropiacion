@@ -1,0 +1,24 @@
+{
+  "name": "funciones_apropiacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valentinaserrano20/Funciones_apropiacion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/valentinaserrano20/Funciones_apropiacion/issues"
+  },
+  "homepage": "https://github.com/valentinaserrano20/Funciones_apropiacion#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
